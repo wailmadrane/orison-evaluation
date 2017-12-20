@@ -1,0 +1,94 @@
+.hero-home{
+    background-image: url('../img/Orison-Hero-5.jpg');
+}
+.how-work{
+    background-color: #3f3f3f;
+    padding: 50px 0;
+
+    &__block{
+        margin-bottom: 60px;
+        @media screen and (min-width: 960px) {
+            max-width: 50%;
+            margin: 100px auto;
+        }
+    }
+    &__vid{
+        @media screen and (min-width: 960px) {
+            margin-bottom: -30%
+        }
+    }
+}
+.featured-products{
+    background-color: $black;
+    padding: 30px;
+    @media screen and (min-width: 960px) {
+        padding-top: 300px;
+    }
+    &__product{
+        @media screen and (min-width: 960px) {
+            padding-bottom: 40px;
+        }
+        &--txt{
+            padding: 40px 0;
+            @media screen and (min-width: 960px) {
+                width: 50%;
+            }
+        }
+        &--img{
+            transform: scale(0.7);
+            @media screen and (min-width: 960px) {
+                transform: scale(1);
+                max-width: 50%;
+                width: auto;
+            }
+        }
+        &--img1{
+            transform: scale(0.5);
+            @media screen and (min-width: 960px) {
+                transform: scale(0.7);
+            }
+        }
+    }
+}
+.why-choose{
+    padding-top: 80px;
+    &__thumbs{
+        @media screen and (min-width: 960px) {
+            padding: 60px 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &--icon{
+            width: 85px;
+        }
+    }
+}
+.featured-quality{
+    background-color: $dark-grey;
+}
+.reserve{
+    background-color: $black;
+    padding: 60px 0;
+    @media screen and (min-width: 960px) {
+        padding: 120px 0;
+    }
+    &__block{
+        &--img{
+            @media screen and (min-width: 960px) {
+                width: auto;
+            }
+        }
+    }
+}
+.partner{
+    background-color: $blue-grey;
+    padding: 60px 0;
+    &__thumb{
+        &--img{
+            width: 180px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.menu{
+    background: rgba(33, 33, 33, 0.98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    &__warrper{
+        @media screen and (min-width: 960px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__mobile-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 20px 0;
+        @media screen and (min-width: 960px) {
+            display: inline-block;
+        }
+        &--logo{
+            width: 120px;
+        }
+        &--burger{
+            height: 15px;
+            width: 15px;
+            position: relative;
+            .bar{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+            }
+            .bar:nth-of-type(1){
+                top: 20%;
+                transform: translate(-50%,-50%);
+            }
+            .bar:nth-of-type(3){
+                top: 80%;
+                transform: translate(-50%,-50%);
+            }
+            @media screen and (min-width: 960px) {
+                display: none;
+            }
+        }
+    }
+    &__links{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 960px) {
+            display: flex!important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+            padding: 20px;
+
+            justify-content: flex-end;
+        }
+        &--link{
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: .18s ease-in-out;
+            &:hover{
+                color: $blue-grey;
+            }
+            @media screen and (min-width: 960px) {
+                padding: 0 10px;
+            }
+        }
+        &--btn{
+            @media screen and (max-width: 960px) {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+
+                text-align: center;
+
+                border-color: transparent;
+                &:hover{
+                    color: $blue-grey;
+                    border-color: $blue-grey;
+                    background-color: transparent;
+                }
+            }
+        }
+        &--block-btn{
+            display: flex;
+            width: 100%;
+            @media screen and (min-width: 960px) {
+                justify-content: flex-end;
+            }
+        }
+    }
+}

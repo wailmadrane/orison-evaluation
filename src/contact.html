@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Site Orison evaluation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orison</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- //////////// my plug-in //////////// -->
+        <link rel="stylesheet" href="plugin/scroll-reveal.css">
+        <!-- //////////// owl-carousel //////////// -->
+        <link rel="stylesheet" href="assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+        <!-- //////////// featherlight //////////// -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.9/featherlight.min.css">
+        <!-- //////////// main css //////////// -->
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+
+    <nav class="menu">
+
+        <div class="warrper menu__warrper">
+            <div class="menu__mobile-bar">
+                <a href="index.html">
+                    <img class="menu__mobile-bar--logo" src="img/logo.svg" alt="Orison">
+                </a>
+
+                <button class="menu__mobile-bar--burger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+            </div>
+
+            <div class="menu__links">
+                <a class="menu__links--link" href="products.html">Products</a>
+
+                <a class="menu__links--link" href="#">About</a>
+
+                <a class="menu__links--link" href="blog.html">Blog</a>
+
+                <a class="menu__links--link" href="contact.html">Contact</a>
+
+                <a class="menu__links--link" href="#">Media</a>
+
+                <div class="menu__links--block-btn">
+                    <a class="menu__links--btn btn btn__white" href="#">Reserve Now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header class="hero-contact">
+        <div class="warrper">
+            <form class="hero-contact__containt">
+                <h1 class="small-title txt--blue-grey txt--center">Contact orison</h1>
+                <p class="big--paragraph txt--white txt--center">
+                    We'd love to hear from you.
+                </p>
+                <div class="hero-contact__containt--fullname">
+                    <input class="hero-contact__containt--firstname" type="text" name="firstname" placeholder="First Name">
+                    <input class="hero-contact__containt--lastname " type="text" name="lastname" placeholder="Last Name">
+                </div>
+                <input class="hero-contact__containt--email" type="email" name="email" placeholder="Email">
+                <textarea class="hero-contact__containt--txtarea" name="message" placeholder="Message"></textarea>
+                <input class="hero-contact__containt--submit-btn btn btn__grey" type="submit" name="submit" value="submit">
+            </form>
+        </div>
+    </header>
+
+    <!-- //////////// Contact start //////////// -->
+    <main class="contact">
+        <!--flickr api-->
+        <section class="follow-us">
+            <div class="warrper">
+                <h2 class="big--paragraph txt--center" data-scroll-reveal="true">Follow us on FlickR</h2>
+                <div class="owl-carousel owl-theme" data-scroll-reveal="true">
+                </div>
+            </div>
+        </section>
+
+        <!--google map-->
+        <section class="find-us">
+            <div class="warrper">
+                <h2 class="big--paragraph txt--center" data-scroll-reveal="true" >Find us @GooglePlex HQ</h2>
+                <div id="map" data-scroll-reveal="true"></div>
+            </div>
+        </section>
+    </main>
+    <!-- //////////// Contact end //////////// -->
+
+    <footer class="footer">
+        <div class="footer--warrper warrper">
+            <div class="footer__block footer--links">
+                <div class="footer--links__column">
+                    <a class="footer__links--link" href="#">PRODUCTS</a>
+                    <a class="footer__links--link" href="#">ABOUT</a>
+                    <a class="footer__links--link" href="#">BLOG</a>
+                </div>
+                <div class="footer--links__column">
+                    <a class="footer__links--link" href="#">CONTACT</a>
+                    <a class="footer__links--link" href="#">FAQS</a>
+                    <a class="footer__links--link" href="#">MEDIA</a>
+                </div>
+            </div>
+
+            <div class="footer__block footer--network">
+
+                <a class="footer--network__cercle">
+                    <i class="fa fa-facebook" href="#"></i>
+                </a>
+
+                <a class="footer--network__cercle">
+                    <i class="fa fa-twitter" href="#"></i>
+                </a>
+
+
+                <a class="footer--network__cercle">
+                    <i class="fa fa-instagram" href="#"></i>
+                </a>
+
+
+
+                <a class="footer--network__cercle">
+                    <i class="fa fa-linkedin" href="#"></i>
+                </a>
+
+            </div>
+
+            <form class="footer__block footer--contact">
+                <label for="email">Sign up for updates</label>
+                <input class="footer--contact__email" type="email" name="email" value="Email">
+                <input class="btn btn__grey" type="submit" name="submit" value="SUBMIT">
+            </form>
+
+            <small class="footer__block footer--rights txt--grey">
+                ©2016 Orison. <br>
+                All rights reserved.
+            </small>
+        </div>
+    </footer>
+
+
+        <script id="mes-photos" type="text/x-handlebars-template">
+          {{#each this}}
+          <div class="img-container">
+            <a href="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_b.jpg" data-featherlight="image">
+              <img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="{{title}}">
+            </a>
+          </div>
+          {{/each}}
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="assets/owl.carousel.min.js"></script>
+        <script src="plugin/scroll-reveal.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.9/featherlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdODK8Q827qmuCRFBZBNU5oMT78BEcba4&callback=initMap"
+        async defer></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

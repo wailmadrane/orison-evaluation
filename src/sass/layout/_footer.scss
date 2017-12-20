@@ -1,0 +1,85 @@
+.footer{
+    background-color: #3f3f3f;
+    color: $white;
+    font-size: 0.7rem;
+    padding: 50px 0;
+    @media screen and (min-width: 960px) {
+        &--warrper{
+            display: flex;
+        }
+    }
+    &__block{
+        @media screen and (min-width: 960px) {
+            width: 25%;
+        }
+    }
+    &--links{
+        font-weight: bold;
+        display: flex;
+        padding-bottom: 50px;
+        &__column{
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        &--link{
+            @media screen and (min-width: 960px) {
+                &:hover{
+                    color: $grey;
+                }
+            }
+        }
+    }
+    &--network{
+        padding-bottom: 50px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        &__cercle{
+            border: 1px solid #fff;
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 8px;
+
+            transition: .2s ease-in-out;
+            @media screen and (min-width: 960px) {
+                &:hover{
+                    border-color: $grey;
+                    i{
+                        transition: .2s ease-in-out;
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+    &--contact{
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__email{
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: transparent;
+            border: 1px solid $grey;
+
+            color: $grey;
+        }
+    }
+    &--rights{
+        padding-bottom: 50px;
+        text-align: center;
+        display: block;
+        font-size: 0.8rem;
+    }
+}

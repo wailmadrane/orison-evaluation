@@ -1,0 +1,83 @@
+.hero-projects{
+    background-color: $black;
+    position: relative;
+    @media screen and (min-width: 960px) {
+        position: relative;
+    }
+    &__pic-block{
+        @media screen and (min-width: 960px) {
+            position: absolute;
+            top: 50%;
+            right: -30%;
+            transform: translateY(-50%);
+            width: 80%;
+            max-width: 1000px;
+        }
+    }
+    &__containt{
+        @media screen and (min-width: 960px) {
+            margin: 10% 0;
+        }
+    }
+}
+.free-standing{
+    background-color: $dark-grey;
+    padding: 60px 0;
+    &__pic-block{
+        padding: 0 15%;
+    }
+}
+.effortless{
+    padding: 60px 0;
+    &__thumbs{
+        &--thumb{
+            margin-bottom: 20px;
+            background-color: #f2f4f4;
+            &--icon{
+                max-width: 160px;
+                margin-bottom: 20px;
+            }
+            &--icon-energy{
+                max-width: 120px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.who-can-us{
+    background-color: #f2f4f4;
+    &__containt{
+        text-align: center;
+        @media screen and (min-width: 960px) {
+            text-align: left;
+        }
+        &--row{
+            text-align: center;
+            position: relative;
+            padding: 3% 0;
+            @media screen and (min-width: 960px) {
+                text-align: left;
+                display: flex;
+                align-items: center;
+            }
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background-color: rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+.mobile-app{
+    background-color: $black;
+    padding: 60px 0;
+}
+.cloud{
+    background-color: $white;
+    padding: 60px 0;
+}

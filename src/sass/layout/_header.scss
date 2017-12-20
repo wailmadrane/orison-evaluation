@@ -1,0 +1,11 @@
+.hero{
+    background:{
+        position: center;
+        size: cover;
+        background-repeat: no-repeat;
+    }
+    padding: 100px 0;
+    @media screen and (min-width: 960px) {
+        padding: 180px 0;
+    }
+}

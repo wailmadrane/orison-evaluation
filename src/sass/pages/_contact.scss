@@ -1,0 +1,53 @@
+.hero-contact{
+    background-color: $black;
+    padding-top: 100px;
+    &__containt{
+        padding: 0 40px;
+        @media screen and (min-width: 960px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--firstname, &--lastname, &--email, &--txtarea, &--submit-btn{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 15px 10px;
+            color: $grey;
+        }
+        &--txtarea{
+            height: 100px;
+        }
+        &--submit-btn{
+            color: #fff;
+            @media screen and (min-width: 960px) {
+                width: auto;
+                padding: 8px 35px;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            padding: 120px 0;
+            &--firstname, &--lastname{
+                width: 50%;
+            }
+            &--firstname{
+                margin-right: 20px;
+            }
+            &--fullname{
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+}
+.follow-us, .find-us{
+    padding: 40px;
+}
+#map{
+    height: 380px;
+    width: 100%;
+    align-items: baseline;
+}
+.contact{
+    padding: 60px 0;
+}
