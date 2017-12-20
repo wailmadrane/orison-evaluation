@@ -34,8 +34,16 @@ a{
 }
 .warrper{
     max-width: 1140px;
-    padding: 0 20px;
+    padding: 0 40px;
     margin: 0 auto;
+}
+.menu{
+    background: rgba(33, 33, 33, 0.98);
+}
+.gradient{
+    @media screen and (min-width: 960px) {
+        background: linear-gradient(rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0));
+    }
 }
 /*------ Font ------*/
 
@@ -82,10 +90,13 @@ a{
 }
 .title{
     font-weight: lighter;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
 }
 .small-title{
     font-size: 0.95rem;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 .big--paragraph{
     font-weight: lighter;
@@ -95,6 +106,7 @@ a{
 }
 .paragraph{
     font-size: 1rem;
+    margin: 10px 0 20px;
 }
 
 /*------ thumb ------*/
@@ -137,7 +149,7 @@ a{
         align-items: center;
     }
     &--txt{
-        padding: 5%;
+        padding: 0 5%;
         @media screen and (min-width: 960px) {
             width: 50%;
         }

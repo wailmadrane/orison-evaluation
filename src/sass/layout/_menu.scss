@@ -1,10 +1,11 @@
 .menu{
-    background: rgba(33, 33, 33, 0.98);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
+
+    transition: .2s background ease-in-out;
     &__warrper{
         @media screen and (min-width: 960px) {
             display: flex;

@@ -1,7 +1,29 @@
+/*-- Nav Menu --*/
+
 $(".menu__links").slideUp(0);
 
 $(".menu__mobile-bar--burger").click(function() {
     $(".menu__links").slideToggle(400);
+    console.log("hello");
+});
+
+var $menu = $(".menu");
+var $document = $(document);
+var menuOffset;
+
+function gradientMenu () {
+    menuOffset = $menu.offset().top;
+    if ( menuOffset > 5 ) {
+        $menu.removeClass('gradient');
+    }
+    else{
+        $menu.addClass('gradient');
+    }
+}
+gradientMenu ();
+
+$document.on("scroll", function(){
+    gradientMenu ();
 });
 
 /*-- Api flickr --*/
@@ -61,3 +83,7 @@ $.getJSON(base_url, options).done(function(e) {
           animation: google.maps.Animation.DROP
         });
     }
+
+/*-- Parallax --*/
+    
+$('.parallax-1').parallax({imageSrc: 'img/blog-cvr-9-26.jpg'});
