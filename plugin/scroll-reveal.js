@@ -1,20 +1,22 @@
 
-/*-- plug-in --*/
+/*-- My Scroll Reveal plug-in Js by Waïl Madrane --*/
 
-var $scrollReveal = $('[data-scroll-reveal="true"]');
-var $document = $(document);
-var scrollRevealOffset;
-var num = 0;
+$(document).ready(function() {
+   var $scrollReveal = $('[data-scroll-reveal="true"]');
+   var $document = $(document);
+   var revealHeight = Math.round($(window).height()*0.66);
+   var scrollRevealOffset = 0;
 
-$scrollReveal.addClass('hidden');
+   $scrollReveal.addClass('hidden');
 
-$document.on("scroll", function(){
+   $document.on('scroll', function(){
+       $scrollReveal.each(function(){
+           scrollRevealOffset = $(this).offset().top - revealHeight;
 
-    $scrollReveal.each(function() {
-    scrollRevealOffset = $(this).offset().top/3;
-
-        if( $document.scrollTop() > scrollRevealOffset && $(this).hasClass('hidden') ){
-            $(this).removeClass('hidden');
-        }
-    });
+           if ( $document.scrollTop() > scrollRevealOffset && $(this).hasClass('hidden') ) {
+               $(this).removeClass('hidden');
+               console.log("hello");
+           }
+       });
+   });
 });

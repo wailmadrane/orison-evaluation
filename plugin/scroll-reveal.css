@@ -1,4 +1,6 @@
 
+/*-- My Scroll Reveal plug-in Css by Waïl Madrane --*/
+
 *[data-scroll-reveal="true"]{
     transition: .4s ease-in-out;
     opacity: 1;
